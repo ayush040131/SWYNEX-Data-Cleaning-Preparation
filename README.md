@@ -97,6 +97,7 @@ SWYNEX-Data-Cleaning-Preparation/
 │   └── survival_by_traveling_status.png
 │
 └── README.md
+```
 
 # Task 2 - Exploratory Data Analysis
 
