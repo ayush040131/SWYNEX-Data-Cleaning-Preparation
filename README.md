@@ -78,16 +78,22 @@ The cleaned dataset is available in:
 ## 7. Project Structure
 
 ```text
-Data_Cleaning_Internship/
+SWYNEX-Data-Cleaning-Preparation/
 │
 ├── data/
 │   ├── titanic.csv
 │   └── cleaned_titanic.csv
 │
 ├── scripts/
+│   ├── clean_data.py
 │   ├── inspect_data.py
-│   └── clean_data.py
+│   └── exploratory_analysis.py
 │
-├── notebooks/
+├── charts/
+│   ├── survival_by_gender.png
+│   ├── survival_by_class.png
+│   ├── average_age_by_survival.png
+│   ├── average_fare_by_survival.png
+│   └── survival_by_traveling_status.png
 │
 └── README.md
