@@ -97,3 +97,79 @@ SWYNEX-Data-Cleaning-Preparation/
 │   └── survival_by_traveling_status.png
 │
 └── README.md
+
+# Task 2 - Exploratory Data Analysis
+
+## 8. Exploratory Analysis
+
+The cleaned Titanic dataset from Task 1 was analyzed using Python, Pandas, and Matplotlib.
+
+The analysis focused on:
+- Basic statistical summaries
+- Survival patterns
+- Passenger class
+- Gender
+- Age
+- Fare
+- Traveling alone
+- Potential anomalies
+
+## 9. Key Insights
+
+### Insight 1: Survival by Gender
+
+Female passengers had a survival rate of approximately 73.97%, while male passengers had a survival rate of approximately 21.72%.
+
+This shows a substantial difference in survival rates between the two gender groups in the dataset.
+
+### Insight 2: Survival by Passenger Class
+
+First-class passengers had a survival rate of 63.68%, second-class passengers had a survival rate of 50.61%, and third-class passengers had a survival rate of 25.74%.
+
+The dataset therefore shows a clear association between passenger class and survival.
+
+### Insight 3: Average Age by Survival
+
+Passengers who survived had an average age of 28.33 years, while passengers who did not survive had an average age of 30.50 years.
+
+The difference is relatively small, so age alone does not appear to show a strong difference in this simple comparison.
+
+### Insight 4: Average Fare by Survival
+
+Passengers who survived paid an average fare of approximately 50.19, compared with 24.03 for passengers who did not survive.
+
+This shows an association between fare level and survival in the dataset. Fare may also be related to passenger class.
+
+### Insight 5: Survival by Traveling Status
+
+Passengers traveling with someone had a survival rate of 51.18%, compared with 33.71% for passengers traveling alone.
+
+This indicates an association between traveling status and survival in the dataset.
+
+## 10. Anomaly Identified
+
+The dataset contains unusually high fare values.
+
+The median fare was 15.95, while the maximum fare was 512.3292.
+
+The highest fare values were associated with first-class passengers. These values were retained because they may represent genuine high-priced tickets and were not identified as data-entry errors.
+
+Therefore, these observations were treated as potential outliers rather than incorrect data.
+
+## 11. Charts
+
+The following charts were created using Matplotlib:
+
+1. Survival Rate by Gender
+2. Survival Rate by Passenger Class
+3. Average Age by Survival Status
+4. Average Fare by Survival Status
+5. Survival Rate by Traveling Status
+
+The chart files are available in the `charts/` folder.
+
+## 12. Conclusion
+
+Exploratory analysis revealed several patterns in the cleaned Titanic dataset. Survival rates varied substantially by gender and passenger class. Differences were also observed based on fare and traveling status, while the average age difference between survivors and non-survivors was relatively small.
+
+The analysis demonstrates how Python, Pandas, and Matplotlib can be used to summarize data, identify patterns, visualize relationships, and investigate potential anomalies.
