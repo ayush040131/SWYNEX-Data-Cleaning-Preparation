@@ -78,30 +78,23 @@ The cleaned dataset is available in:
 ## 7. Project Structure
 
 ```text
-SWYNEX-Data-Cleaning-Preparation/
+Data_Cleaning_Internship/
 │
 ├── data/
 │   ├── titanic.csv
 │   └── cleaned_titanic.csv
 │
 ├── scripts/
-│   ├── clean_data.py
 │   ├── inspect_data.py
-│   └── exploratory_analysis.py
+│   └── clean_data.py
 │
-├── charts/
-│   ├── survival_by_gender.png
-│   ├── survival_by_class.png
-│   ├── average_age_by_survival.png
-│   ├── average_fare_by_survival.png
-│   └── survival_by_traveling_status.png
+├── notebooks/
 │
 └── README.md
-```
 
 # Task 2 - Exploratory Data Analysis
 
-## 8. Exploratory Analysis
+## 9. Exploratory Analysis
 
 The cleaned Titanic dataset from Task 1 was analyzed using Python, Pandas, and Matplotlib.
 
@@ -115,7 +108,7 @@ The analysis focused on:
 - Traveling alone
 - Potential anomalies
 
-## 9. Key Insights
+## 10. Key Insights
 
 ### Insight 1: Survival by Gender
 
@@ -147,7 +140,7 @@ Passengers traveling with someone had a survival rate of 51.18%, compared with 3
 
 This indicates an association between traveling status and survival in the dataset.
 
-## 10. Anomaly Identified
+## 11. Anomaly Identified
 
 The dataset contains unusually high fare values.
 
@@ -157,7 +150,7 @@ The highest fare values were associated with first-class passengers. These value
 
 Therefore, these observations were treated as potential outliers rather than incorrect data.
 
-## 11. Charts
+## 12. Charts
 
 The following charts were created using Matplotlib:
 
@@ -167,10 +160,62 @@ The following charts were created using Matplotlib:
 4. Average Fare by Survival Status
 5. Survival Rate by Traveling Status
 
-The chart files are available in the `charts/` folder.
-
-## 12. Conclusion
+## 13. Conclusion
 
 Exploratory analysis revealed several patterns in the cleaned Titanic dataset. Survival rates varied substantially by gender and passenger class. Differences were also observed based on fare and traveling status, while the average age difference between survivors and non-survivors was relatively small.
 
 The analysis demonstrates how Python, Pandas, and Matplotlib can be used to summarize data, identify patterns, visualize relationships, and investigate potential anomalies.
+
+## Task 3 – Interactive Power BI Dashboard
+
+### Objective
+
+Create an interactive dashboard using Power BI to communicate the main findings from the cleaned Titanic dataset.
+
+### Tool Used
+
+- Microsoft Power BI Desktop
+
+### Dashboard Pages
+
+#### Page 1 – Titanic Passenger Dashboard
+
+The overview page contains the following KPI cards:
+
+- Total Passengers: 780
+- Total Survivors: 322
+- Survival Rate: 41.28%
+- Average Fare: 34.83
+
+#### Page 2 – Titanic Survival Analysis
+
+The analysis page contains interactive filters and charts.
+
+### Interactive Filters
+
+- Gender
+- Passenger Class
+- Traveling Status
+
+### Visualizations
+
+- Survival Rate by Gender
+- Survival Rate by Passenger Class
+- Survival Rate by Traveling Status
+- Average Fare by Survival Status
+- Average Age by Survival Status
+
+### Key Features
+
+- Interactive slicers for filtering the dashboard
+- KPI cards for important summary statistics
+- Charts for identifying survival patterns
+- Data labels for easier interpretation
+- Separate overview and analysis pages
+- Dashboard created using the cleaned dataset from Task 1
+
+### Dashboard File
+
+Power BI dashboard file:
+
+`SWYNEX_Titanic_Interactive_Dashboard.pbix`
